@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif; /* 文字の種類 */
+    margin: 0; /* 余白をなくす */
+    padding: 0; /* 内側の余白をなくす */
+    background-color: #f4f4f4; /* 背景色 */
+    color: #333; /* 文字の色 */
+    line-height: 1.6; /* 行の高さ */
+}
+
+header {
+    background-color: #007bff; /* ヘッダーの背景色 */
+    color: white; /* ヘッダーの文字色 */
+    padding: 40px 20px; /* 内側の余白 */
+    text-align: center; /* 文字を中央寄せ */
+}
+
+header h1 {
+    font-size: 2.5em; /* タイトルの大きさ */
+    margin-bottom: 10px; /* 下の余白 */
+}
+
+header p {
+    font-size: 1.2em; /* キャッチフレーズの大きさ */
+}
+
+section {
+    padding: 40px 20px; /* セクションの内側余白 */
+    margin: 20px auto; /* セクションの外側余白と中央寄せ */
+    max-width: 800px; /* 最大幅 */
+    background-color: white; /* セクションの背景色 */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* 影 */
+    border-radius: 8px; /* 角を丸くする */
+}
+
+section h2 {
+    text-align: center; /* タイトルを中央寄せ */
+    color: #0056b3; /* タイトルの色 */
+    margin-bottom: 30px; /* 下の余白 */
+}
+
+#features div {
+    margin-bottom: 25px; /* 各ポイントの下の余白 */
+    border-bottom: 1px solid #eee; /* 下線 */
+    padding-bottom: 20px; /* 下線の内側余白 */
+}
+
+#features div:last-child {
+    border-bottom: none; /* 最後の下線を消す */
+    padding-bottom: 0;
+}
+
+#features h3 {
+    color: #007bff; /* ポイント見出しの色 */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.button {
+    display: block; /* ブロック要素にして幅いっぱいに */
+    width: 80%; /* 幅 */
+    max-width: 300px; /* 最大幅 */
+    margin: 30px auto; /* 上下の余白と中央寄せ */
+    padding: 15px 30px; /* 内側の余白 */
+    background-color: #28a745; /* ボタンの背景色 */
+    color: white; /* ボタンの文字色 */
+    text-align: center; /* 文字中央寄せ */
+    text-decoration: none; /* 下線をなくす */
+    font-size: 1.3em; /* 文字の大きさ */
+    border-radius: 5px; /* 角を丸くする */
+    transition: background-color 0.3s ease; /* マウスを乗せた時の変化 */
+}
+
+.button:hover {
+    background-color: #218838; /* マウスを乗せた時の背景色 */
+}
+
+footer {
+    text-align: center; /* 文字中央寄せ */
+    padding: 20px; /* 内側余白 */
+    margin-top: 40px; /* 上の余白 */
+    background-color: #333; /* フッターの背景色 */
+    color: white; /* フッターの文字色 */
+    font-size: 0.9em;
+}
+
+/* 画像ボタン全体を囲む箱のスタイル */
+.store-buttons {
+    text-align: center; /* 中の要素（画像リンク）を中央寄せにする */
+    margin: 30px auto; /* 上下左右の余白を設定し、左右はautoで中央寄せ */
+    padding: 10px; /* 内側の余白 */
+}
+
+/* 画像自体のスタイル（必要に応じて調整） */
+.store-buttons img {
+    max-width: 150px; /* 画像の最大幅（PC表示用） */
+    height: auto;     /* 高さは幅に合わせて自動調整 */
+    margin: 0 15px;   /* 画像同士の左右の余白 */
+    display: inline-block; /* 画像を横に並べる */
+    vertical-align: middle; /* 垂直方向の揃え（高さが違う場合など） */
+}
+
+/* スマートフォン表示など、画面が狭い場合の調整 */
+@media (max-width: 600px) { /* 画面幅が600px以下の場合に適用 */
+    .store-buttons img {
+        max-width: 120px; /* スマホでは画像を少し小さくする */
+        margin: 5px;      /* スマホでは画像間の余白も少し狭くする */
+    }
+}
+
+
